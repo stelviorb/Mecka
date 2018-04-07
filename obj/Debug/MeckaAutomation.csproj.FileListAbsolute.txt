@@ -1,0 +1,17 @@
+c:\users\romb\documents\visual studio 2015\Projects\MeckaAutomation\MeckaAutomation\bin\Debug\MeckaAutomation.dll
+c:\users\romb\documents\visual studio 2015\Projects\MeckaAutomation\MeckaAutomation\bin\Debug\MeckaAutomation.pdb
+c:\users\romb\documents\visual studio 2015\Projects\MeckaAutomation\MeckaAutomation\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+c:\users\romb\documents\visual studio 2015\Projects\MeckaAutomation\MeckaAutomation\bin\Debug\nunit.framework.dll
+c:\users\romb\documents\visual studio 2015\Projects\MeckaAutomation\MeckaAutomation\bin\Debug\WebDriver.dll
+c:\users\romb\documents\visual studio 2015\Projects\MeckaAutomation\MeckaAutomation\bin\Debug\nunit.framework.pdb
+c:\users\romb\documents\visual studio 2015\Projects\MeckaAutomation\MeckaAutomation\bin\Debug\nunit.framework.xml
+c:\users\romb\documents\visual studio 2015\Projects\MeckaAutomation\MeckaAutomation\bin\Debug\WebDriver.xml
+c:\users\romb\documents\visual studio 2015\Projects\MeckaAutomation\MeckaAutomation\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+c:\users\romb\documents\visual studio 2015\Projects\MeckaAutomation\MeckaAutomation\obj\Debug\MeckaAutomation.dll
+c:\users\romb\documents\visual studio 2015\Projects\MeckaAutomation\MeckaAutomation\obj\Debug\MeckaAutomation.pdb
+c:\users\romb\documents\visual studio 2015\Projects\MeckaAutomation\MeckaAutomation\bin\Debug\MeckaAutomation.dll.config
+C:\Users\RomB\Documents\Visual Studio 2015\Projects\MeckaAutomation\MeckaAutomation\bin\Debug\testSuite.xml
+C:\Users\RomB\Documents\Visual Studio 2015\Projects\MeckaAutomation\MeckaAutomation\obj\Debug\MeckaAutomation.Properties.Resources.resources
+C:\Users\RomB\Documents\Visual Studio 2015\Projects\MeckaAutomation\MeckaAutomation\obj\Debug\MeckaAutomation.csproj.GenerateResource.Cache
+C:\Users\RomB\Documents\Visual Studio 2015\Projects\MeckaAutomation\MeckaAutomation\bin\Debug\WebDriver.Support.dll
+C:\Users\RomB\Documents\Visual Studio 2015\Projects\MeckaAutomation\MeckaAutomation\bin\Debug\WebDriver.Support.xml

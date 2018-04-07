@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<TestSuite name="Mecka">
+  <TestMethod name="SearchBy_Brand_Test">
+	<TestCase description="Candid_SearchByBrand" name="000">
+      <TestParam name="URL" value="http://candid.onmecka.com"/>
+      <TestParam name="Product Name" value="OEFit HID Ballasts 636313212 OEM Direct Fit HID Ballast"/>   
+    </TestCase>
+	<TestCase description="Maritime_SearchByBrand" name="000">
+      <TestParam name="URL" value="http://maritime.onmecka.com"/>
+      <TestParam name="Product Name" value="AB Catalytic 0201 Direct-Fit Catalytic Converter (Non C.A.R.B. Compliant)"/>
+    </TestCase>
+	<TestCase description="Newfound_SearchByBrand" name="000">
+      <TestParam name="URL" value="http://newfound.onmecka.com/"/>
+      <TestParam name="Product Name" value="BAK Industries 1126100 FiberMax 04-13 GM 5ft.8in."/>
+    </TestCase>
+	<TestCase description="PremierPerformance_SearchByBrand" name="000">
+      <TestParam name="URL" value="https://premierperformance.parts/"/>
+      <TestParam name="Product Name" value="FiTech 70002 Ultimate LS Kit for LS1/LS2/LS6 500 HP EFI with Transmission Control"/>        
+    </TestCase>  
+  </TestMethod>
+  <TestMethod name="SearchBy_Category_Test">
+	<TestCase description="Calnorthautoparts_SearchByCategory" name="000">
+      <TestParam name="URL" value="http://www.calnorthautoparts.com"/>
+      <TestParam name="Product Name" value="MOOG GBDEMO Merchandisers - Box"/>   
+    </TestCase>
+	<TestCase description="Candid_SearchByCategory" name="000">
+      <TestParam name="URL" value="http://candid.onmecka.com"/>
+      <TestParam name="Product Name" value="Husky Liners 17005 Removable Pivoting Mud Flaps 14&quot; Wide - Stainless Steel Weight"/>   
+    </TestCase>
+	<TestCase description="Maritime_SearchByCategory" name="000">
+      <TestParam name="URL" value="http://maritime.onmecka.com"/>
+      <TestParam name="Product Name" value="Dorman - OE Solutions 614-066 CV Joint Boot Grease"/>
+    </TestCase>
+	<TestCase description="Newfound_SearchByCategory" name="000">
+      <TestParam name="URL" value="http://newfound.onmecka.com/"/>
+      <TestParam name="Product Name" value="Undercover MP1001GL Seal"/>
+    </TestCase>
+	<TestCase description="PremierPerformance_SearchByCategory" name="000">
+      <TestParam name="URL" value="https://premierperformance.parts/"/>
+      <TestParam name="Product Name" value="Royal Purple 1513 Synfilm Recip 100"/>        
+    </TestCase>  
+  </TestMethod>
+  <TestMethod name="SearchBy_PartNumberAndName_Test">
+    <TestCase description="Calnorthautoparts_040" name="000">
+      <TestParam name="URL" value="http://www.calnorthautoparts.com"/>
+      <TestParam name="Search Request" value="040"/>
+      <TestParam name="Product Name" value="Calnorth 0401 Direct-Fit Catalytic Converter (Non C.A.R.B. Compliant)"/>   
+    </TestCase>
+    <TestCase description="Calnorthautoparts_Spring" name="000">
+      <TestParam name="URL" value="http://www.calnorthautoparts.com"/>
+      <TestParam name="Search Request" value="Spring"/>
+      <TestParam name="Product Name" value="MOOG 2203 Coil Spring Set"/>
+    </TestCase>
+    <TestCase description="Candid_050" name="000">
+      <TestParam name="URL" value="http://candid.onmecka.com"/>
+      <TestParam name="Search Request" value="050"/>
+      <TestParam name="Product Name" value="AJUsa 00521050 Fuel Pump Gasket"/>   
+    </TestCase>
+    <TestCase description="Candid_Radiator" name="000">
+      <TestParam name="URL" value="http://candid.onmecka.com"/>
+      <TestParam name="Search Request" value="Radiator"/>
+      <TestParam name="Product Name" value="Dorman - OE Solutions 030-011 Radiator Mount Tech Tray"/>
+    </TestCase>
+    <TestCase description="Maritime_040" name="000">
+      <TestParam name="URL" value="http://maritime.onmecka.com"/>
+      <TestParam name="Search Request" value="040"/>
+      <TestParam name="Product Name" value="AB Catalytic 0401 Direct-Fit Catalytic Converter (Non C.A.R.B. Compliant)"/>
+    </TestCase>
+    <TestCase description="Maritime_Fog" name="000">
+      <TestParam name="URL" value="http://maritime.onmecka.com"/>
+      <TestParam name="Search Request" value="Fog"/>
+      <TestParam name="Product Name" value="Dorman 1570000 Fog Lamp Assembly"/>
+    </TestCase>
+    <TestCase description="Newfound_040" name="000">
+      <TestParam name="URL" value="http://newfound.onmecka.com/"/>
+      <TestParam name="Search Request" value="040"/>
+      <TestParam name="Product Name" value="Flowmaster 1040 Header-back System - 3.00 in. Dual Rear Exit - Pipes Only No Mufflers"/>
+    </TestCase>
+    <TestCase description="Newfound_Floor" name="000">
+      <TestParam name="URL" value="http://newfound.onmecka.com/"/>
+      <TestParam name="Search Request" value="Floor"/>
+      <TestParam name="Product Name" value="Husky Liners 13941 Front Floor Liners"/>
+    </TestCase>
+    <TestCase description="PremierPerformance_040" name="000">
+      <TestParam name="URL" value="https://premierperformance.parts"/>
+      <TestParam name="Search Request" value="040"/>
+      <TestParam name="Product Name" value="Magnaflow 50402 Conv DF 05-08 Kia Sportage 2.0L"/>      
+    </TestCase>
+    <TestCase description="PremierPerformance_Sensor" name="000">
+      <TestParam name="URL" value="https://premierperformance.parts/"/>
+      <TestParam name="Search Request" value="SENSOR"/>
+      <TestParam name="Product Name" value="Magnaflow 10010 Thrd O2 Sensor Boss 20-Pk"/>        
+    </TestCase>
+  </TestMethod>
+  <TestMethod name="SearchVehicleBy_YearMakeModel_BodyTypeEngine_Test">
+    <TestCase description="Calnorthautoparts_2010SubaruImpreza" name="000">
+      <TestParam name="URL" value="http://www.calnorthautoparts.com"/>
+      <TestParam name="Year" value="2010"/>
+      <TestParam name="Make" value="Subaru"/>
+      <TestParam name="Model" value="Impreza"/>
+      <TestParam name="Body Type" value="4-Door Sedan"/>
+	  <TestParam name="Engine" value="2.5L 2458CC H4 GAS DOHC Turbocharged"/>
+	  <TestParam name="Vehicle Search" value="2010 Subaru Impreza 4-Door Sedan 2.5L 2458CC H4 GAS DOHC Turbocharged AWD"/>
+	  <TestParam name="Product Name" value="MOOG ES3712 Steering Tie Rod End"/>
+    </TestCase>
+    <TestCase description="Candid_2010SubaruImpreza" name="000">
+      <TestParam name="URL" value="http://candid.onmecka.com"/>
+      <TestParam name="Year" value="2010"/>
+      <TestParam name="Make" value="Subaru"/>
+      <TestParam name="Model" value="Impreza"/>
+      <TestParam name="Body Type" value="4-Door Sedan"/>
+	  <TestParam name="Engine" value="2.5L 2458CC H4 GAS DOHC Turbocharged"/>
+	  <TestParam name="Vehicle Search" value="2010 Subaru Impreza 4-Door Sedan 2.5L 2458CC H4 GAS DOHC Turbocharged AWD"/>
+	  <TestParam name="Product Name" value="Dorman 955-802 Side View Mirror Right Power, Non-Heated"/>
+    </TestCase>	
+	<TestCase description="Maritime_2010SubaruImpreza" name="000">
+      <TestParam name="URL" value="http://maritime.onmecka.com"/>
+      <TestParam name="Year" value="2010"/>
+      <TestParam name="Make" value="Subaru"/>
+      <TestParam name="Model" value="Impreza"/>
+      <TestParam name="Body Type" value="4-Door Sedan"/>
+	  <TestParam name="Engine" value="2.5L 2458CC H4 GAS DOHC Turbocharged"/>
+	  <TestParam name="Vehicle Search" value="2010 Subaru Impreza 4-Door Sedan 2.5L 2458CC H4 GAS DOHC Turbocharged AWD"/>
+	  <TestParam name="Product Name" value="AP Exhaust 20056 Exhaust Muffler Assembly"/>
+    </TestCase>
+	<TestCase description="Newfound_2010SubaruImpreza" name="000">
+      <TestParam name="URL" value="http://newfound.onmecka.com"/>
+      <TestParam name="Year" value="2010"/>
+      <TestParam name="Make" value="Subaru"/>
+      <TestParam name="Model" value="Impreza"/>
+      <TestParam name="Body Type" value="4-Door Sedan"/>
+	  <TestParam name="Engine" value="2.5L 2458CC H4 GAS DOHC Turbocharged"/>
+	  <TestParam name="Vehicle Search" value="2010 Subaru Impreza 4-Door Sedan 2.5L 2458CC H4 GAS DOHC Turbocharged AWD"/>
+	  <TestParam name="Product Name" value="Magnaflow 16824 Sys C/B 08 Su Impreza STi 2.5 Turbo"/>
+    </TestCase>
+	<TestCase description="PremierPerformance_2010SubaruImpreza" name="000">
+      <TestParam name="URL" value="https://premierperformance.parts/"/>
+      <TestParam name="Year" value="2010"/>
+      <TestParam name="Make" value="Subaru"/>
+      <TestParam name="Model" value="Impreza"/>
+      <TestParam name="Body Type" value="4-Door Sedan"/>
+	  <TestParam name="Engine" value="2.5L 2458CC H4 GAS DOHC Turbocharged"/>
+	  <TestParam name="Vehicle Search" value="2010 Subaru Impreza 4-Door Sedan 2.5L 2458CC H4 GAS DOHC Turbocharged AWD"/>
+	  <TestParam name="Product Name" value="EBC Brakes BSD1344 Blade Sport Rotors"/>
+    </TestCase>	
+  </TestMethod>  
+  <TestMethod name="SearchVehicleBy_YearMakeModelDrive_Test">
+    <TestCase description="Calnorthautoparts_2012AudiA6" name="000">
+      <TestParam name="URL" value="http://www.calnorthautoparts.com"/>
+      <TestParam name="Year" value="2012"/>
+      <TestParam name="Make" value="Audi"/>
+      <TestParam name="Model" value="A6"/>
+      <TestParam name="Drive" value="FWD"/>
+	  <TestParam name="Vehicle Search" value="2012 Audi A6 4-Door Sedan 2.0L 1984CC 121Cu. In. I4 GAS DOHC Turbocharged FWD"/>
+	  <TestParam name="Product Name" value="MOOG RK621123 Suspension Control Arm and Ball Joint Assembly"/>
+    </TestCase>
+    <TestCase description="Candid_2012AudiA6" name="000">
+      <TestParam name="URL" value="http://candid.onmecka.com"/>
+      <TestParam name="Year" value="2012"/>
+      <TestParam name="Make" value="Audi"/>
+      <TestParam name="Model" value="A6"/>
+      <TestParam name="Drive" value="FWD"/>
+	  <TestParam name="Vehicle Search" value="2012 Audi A6 4-Door Sedan 2.0L 1984CC 121Cu. In. I4 GAS DOHC Turbocharged FWD"/>
+	  <TestParam name="Product Name" value="ContiTech 4060433 AUTOMOTIVE POLY-V BELT"/>
+    </TestCase>	
+	<TestCase description="Maritime_2012AudiA6" name="000">
+      <TestParam name="URL" value="http://maritime.onmecka.com"/>
+      <TestParam name="Year" value="2012"/>
+      <TestParam name="Make" value="Audi"/>
+      <TestParam name="Model" value="A6"/>
+      <TestParam name="Drive" value="FWD"/>
+	  <TestParam name="Vehicle Search" value="2012 Audi A6 4-Door Sedan 2.0L 1984CC 121Cu. In. I4 GAS DOHC Turbocharged FWD"/>
+	  <TestParam name="Product Name" value="Dorman - OE Solutions 522-954 Front Right Lower Control Arm"/>
+    </TestCase>
+	<TestCase description="Newfound_2012AudiA6" name="000">
+      <TestParam name="URL" value="http://newfound.onmecka.com"/>
+      <TestParam name="Year" value="2012"/>
+      <TestParam name="Make" value="Audi"/>
+      <TestParam name="Model" value="A6"/>
+      <TestParam name="Drive" value="FWD"/>
+	  <TestParam name="Vehicle Search" value="2012 Audi A6 4-Door Sedan 2.0L 1984CC 121Cu. In. I4 GAS DOHC Turbocharged FWD"/>
+	  <TestParam name="Product Name" value="Husky Liners 96401 Front &amp; 2nd Seat Floor Liners"/>
+    </TestCase>
+	<TestCase description="PremierPerformance_2012AudiA6" name="000">
+      <TestParam name="URL" value="https://premierperformance.parts/"/>
+      <TestParam name="Year" value="2012"/>
+      <TestParam name="Make" value="Audi"/>
+      <TestParam name="Model" value="A6"/>
+      <TestParam name="Drive" value="FWD"/>
+	  <TestParam name="Vehicle Search" value="2012 Audi A6 4-Door Sedan 2.0L 1984CC 121Cu. In. I4 GAS DOHC Turbocharged FWD"/>
+	  <TestParam name="Product Name" value="EBC Brakes DP32082C EBC REDSTUFF CERAMIC PADS"/>
+    </TestCase>	
+  </TestMethod>
+</TestSuite>
