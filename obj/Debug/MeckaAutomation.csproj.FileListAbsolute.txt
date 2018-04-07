@@ -15,3 +15,4 @@ C:\Users\RomB\Documents\Visual Studio 2015\Projects\MeckaAutomation\MeckaAutomat
 C:\Users\RomB\Documents\Visual Studio 2015\Projects\MeckaAutomation\MeckaAutomation\obj\Debug\MeckaAutomation.csproj.GenerateResource.Cache
 C:\Users\RomB\Documents\Visual Studio 2015\Projects\MeckaAutomation\MeckaAutomation\bin\Debug\WebDriver.Support.dll
 C:\Users\RomB\Documents\Visual Studio 2015\Projects\MeckaAutomation\MeckaAutomation\bin\Debug\WebDriver.Support.xml
+C:\Users\RomB\Documents\Visual Studio 2015\Projects\MeckaAutomation\MeckaAutomation\obj\Debug\MeckaAutomation.csprojResolveAssemblyReference.cache

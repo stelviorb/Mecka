@@ -15,8 +15,7 @@ using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
 
 
 namespace MeckaAutomation
-{
-    //[TestFixture]
+{    
     [TestClass]
     class MeckaTests
     {
@@ -24,36 +23,19 @@ namespace MeckaAutomation
         private Steps.Steps step;
 
 
-        [OneTimeSetUp]
-        //[SetUp]
-        public void startTest() // This method will be fired at the start of the test
+        [OneTimeSetUp]        
+        public void openBrowser() 
         {
-            //driver = new ChromeDriver();
-            //driver.Url = "https://google.ca";
             webDriver = Browsers.Init();
             step = new Steps.Steps(webDriver);
-
-
-            //var dir = Path.GetDirectoryName(typeof(TestingWithReferencedFiles).Assembly.Location);
-            //if (dir != null)
-            //{
-            //    Environment.CurrentDirectory = dir;
-            //    Directory.SetCurrentDirectory(dir);
-            //}
-            //else
-            //    throw new Exception("Path.GetDirectoryName(typeof(TestingWithReferencedFiles).Assembly.Location) returned null");
-
         }
 
         [OneTimeTearDown]
-        //[TearDown]
-        public void endTest() // This method will be fired at the end of the test
+        public void closeBrowser()
         {
-            //driver.Quit();
-            Browsers.Close();
-            
-
+            Browsers.Close();           
         }
+
         public static IEnumerable<TestCaseData> SearchBy_Brand_TestCase => new TestParameterBuilder()
             .Add("URL", "url")
             .Add("Product Name", "Product Name")

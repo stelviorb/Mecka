@@ -16,13 +16,11 @@ namespace MeckaAutomation.Steps
     {
         private MainPage mainPage;
 
-
         private IWebDriver webDriver;
         public Steps(IWebDriver webdriver)
         {
             this.webDriver = webdriver;
-        }
-        
+        }        
         
         public void openUrl(string url)
         {

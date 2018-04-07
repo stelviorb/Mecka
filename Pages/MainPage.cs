@@ -94,7 +94,7 @@ namespace MeckaAutomation.Pages
             Assert.That(webDriver.FindElement(brcrmb_Search).Displayed, Is.EqualTo(true), "Breadcrumb is not displayed");
             string getSearchRequest = webDriver.FindElement(brcrmb_Search).Text;
             Assert.That(getSearchRequest, Is.EqualTo("Search " + searchRequest), $"Returned breadcrumb content is {getSearchRequest}");
-            //Console.WriteLine("BreadCrumbs = " + getSearchRequest);
+
             return this;
         }
 
@@ -103,7 +103,7 @@ namespace MeckaAutomation.Pages
             Assert.That(webDriver.FindElement(ttl_Search).Displayed, Is.EqualTo(true), "Title with Search Request is not displayed");
             string getTitleWithSearchRequest = webDriver.FindElement(ttl_Search).Text;
             Assert.That(getTitleWithSearchRequest, Is.EqualTo("Search: " + searchRequest), $"Returned breadcrumb content is {getTitleWithSearchRequest}");
-            //Console.WriteLine("Title with Search Request = " + getTitleWithSearchRequest);            
+         
             return this;
         }
 
@@ -180,24 +180,8 @@ namespace MeckaAutomation.Pages
         {
             IJavaScriptExecutor js = (IJavaScriptExecutor)webDriver;
             js.ExecuteScript("document.body.style.zoom = '35%';");
-
-
-            //WebDriverWait wait = new WebDriverWait(webDriver, TimeSpan.FromSeconds(10));
-            //var element = wait.Until(ExpectedConditions.ElementIsVisible(btn_TopMenu_Brands));
-
-            //Actions action = new Actions(webDriver);
-            //action.MoveToElement(element).Perform();
-
-            //Thread.Sleep(5000);
             IWebElement element1 = webDriver.FindElement(btn_TopSubMenu_FirstBrand);
             js.ExecuteScript("arguments[0].click()", element1);
-
-            //webDriver.FindElement(btn_TopSubMenu_FirstBrand).Click();
-
-            //JavascriptExecutor js = (JavascriptExecutor)driver;
-            //js.executeScript("arguments[0].click()", yourElement);
-            //Thread.Sleep(3000);
-
             js.ExecuteScript("document.body.style.zoom = '100%';");
 
             return this;
@@ -208,13 +192,10 @@ namespace MeckaAutomation.Pages
         {
             webDriver.FindElement(txt_SearchByVehicleField).SendKeys(year + " " + make + " " + model);
             Thread.Sleep(1000);
-
             IWebElement element = webDriver.FindElement(itm_FirstItemInSuggestionVehicleList);
             IJavaScriptExecutor js = (IJavaScriptExecutor)webDriver;
             js.ExecuteScript("arguments[0].click()", element);
 
-            //webDriver.FindElement(itm_FirstItemInSuggestionVehicleList).Click();
-            //Thread.Sleep(3000);
             return this;
         }
 
@@ -222,16 +203,9 @@ namespace MeckaAutomation.Pages
         {
             Thread.Sleep(1000);
             webDriver.FindElement(itm_FirstItemInSuggestionDriveList).Click();
-
             WebDriverWait wait = new WebDriverWait(webDriver, TimeSpan.FromSeconds(10));
-            //var element = wait.Until(ExpectedConditions.ElementIsVisible(itm_FirstItemInSuggestionDriveList));
             Actions action = new Actions(webDriver);
-            //action.MoveToElement(element).Click().Build().Perform();
 
-
-            //var element = wait.Until(ExpectedConditions.ElementIsVisible(sctn_FirstProductInResult));
-            //action = new Actions(webDriver);
-            //action.MoveToElement(element).Perform();
             return this;
         }
 
@@ -241,7 +215,6 @@ namespace MeckaAutomation.Pages
             var element = wait.Until(ExpectedConditions.ElementIsVisible(ttl_VehicleSearch));
             Actions action = new Actions(webDriver);
             action.MoveToElement(element).Click().Build().Perform();
-
             string vehicleSearchText = webDriver.FindElement(ttl_VehicleSearch).Text;
             Assert.That(vehicleSearchText, Is.EqualTo("Vehicle Search: " + vehicleSearch), "Title vehicle search didn't match");
             return this;
@@ -253,7 +226,6 @@ namespace MeckaAutomation.Pages
             var element = wait.Until(ExpectedConditions.ElementIsVisible(itm_FirstItemInSuggestionBodyTypeList));
             Actions action = new Actions(webDriver);
             action.MoveToElement(element).Click().Build().Perform();
-
             Thread.Sleep(1000);
 
             return this;
@@ -261,20 +233,6 @@ namespace MeckaAutomation.Pages
 
         public MainPage selectVehicleFirstEngineDisplayed(string engine)
         {
-            //WebDriverWait wait = new WebDriverWait(webDriver, TimeSpan.FromSeconds(10));
-            //var element = wait.Until(ExpectedConditions.ElementIsVisible(itm_FirstItemInSuggestionEngineList));
-            //Actions action = new Actions(webDriver);
-            //action.MoveToElement(element).Click().Build().Perform();
-            //try
-            //{
-            //    action.MoveToElement(element).Click().Build().Perform();
-            //}
-            //catch (StaleElementReferenceException e)
-            //{
-            //    Console.WriteLine(e);
-            //    action.MoveToElement(element).Click().Build().Perform();
-            //}
-
             webDriver.FindElement(itm_FirstItemInSuggestionEngineList).Click();
 
             return this;
